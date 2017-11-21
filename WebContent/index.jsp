@@ -1,37 +1,56 @@
-<%@ page language="java" contentType="text/html; charset=ISO-8859-1"
-    pageEncoding="ISO-8859-1"%>
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <html>
-<head>
-<link href="css/style.css" rel="stylesheet"/>
-<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
-<title>Insert title here</title>
-</head>
-<body>
+	<head>
+		<meta charset="UTF-8">
+		<title>Banana Gest</title>	
+		<link href="https://fonts.googleapis.com/css?family=Kanit" rel="stylesheet">	
+		<link rel="stylesheet" type="text/css" href="font-awesome-4.7.0/css/font-awesome.css">
+		<link rel="stylesheet" type="text/css" href="css/bootstrap4.css">
+		<link rel="stylesheet" type="text/css" href="css/styles.css">
+	</head>
 
-<h1>Consulta los datos del usuario</h1>
+	<body>
+		
+		<header class="header">
+			<a href="index.html" style="color:black; font-weight:bold">
+				<h1 class="navbar-brand">Banana<span>Gest</span></h1>
+			</a>
+			
+		</header>
 
-<form id="frmDatosUsuario" action="EjemploJDBCServlet" method="post">
-<input id="Acepta" type="submit" Value="Consulta Registros"/>
-</form>
-
-<h1>Introduce los datos del usuario</h1>
-<form id="frmIntroduce" action="EjemploJDBCRegistro2" method="post">
-<label>Input the User Id:</label>
-<input type="text" name="txtIdUser" />
-<br/>
-<label>Input the Username:</label>
-<input type="text" name="txtUsername" />
-<br/>
-<label>Input the Password of the user:</label>
-<input  type="Password" name="txtPassword" />
-<br/>
-<label>Input the user email:</label>
-<input  type="text" name="txtUserEmail" />
-<br/>
-<input id="GuardaR" type="submit" value="Agregar Registro"/>
-</form>
-</body>
-
-<script src="js/script.js"></script>
+		<div class="container" style="margin-top:10px; margin-bottom:10px">
+			<div class="text-center col-xs-12 col-md-6" style="float:left">
+				<img src="images/banana_logo.png" class="img-fluid text-center" style="width:300px; margin-top:10px">
+			</div>
+			<div class="jumbotron text-center col-xs-12 col-md-6" style="float:left; margin-top:10px">
+				<form action="LoginServlet" method="GET" id="frmlogin">
+  				<div class="form-group">
+    				<label for="emailUsuario">Email de Usuario:</label>
+    				<input type="email" class="form-control" id="emailUsuario" aria-describedby="emailHelp" placeholder="Introduce tu correo">
+  				</div>
+  				<div class="form-group">
+    				<label for="passwordUsuario">Contraseña:</label>
+    				<input type="password" class="form-control" id="passwordUsuario" placeholder="Introduce tu contraseña">
+  				</div>
+				  <button type="submit" class="btn btn-success">Entrar</button>
+				</form>
+			</div>	
+		</div>
+	
+		<footer class="footer text-center">			
+			<div>				
+				<a href="#" target="_blank">					
+					<i class="fa fa-twitter fa-2x" aria-hidden="true"></i>				
+				</a>				
+				<a href="#" target="_blank">					
+					<i class="fa fa-facebook-official fa-2x" aria-hidden="true"></i>				
+				</a>				
+				<a href="#" target="_blank">					
+					<i class="fa fa-linkedin-square fa-2x" aria-hidden="true"></i>				
+				</a>			
+			</div>		
+		</footer>
+	</body>
 </html>
