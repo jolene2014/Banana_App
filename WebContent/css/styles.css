@@ -1,4 +1,7 @@
 @charset "UTF-8";
+*{
+	font-family: 'Kanit';
+}
 :root {
 	--azulPizarraMedio: #7B68EE;
 	--azulAceroClaro: #B0C4DE;
@@ -22,16 +25,31 @@
 	color: gray;
 	text-decoration: none;
 }
-
-
-
+#about-we {
+  background-color:GhostWhite;
+  height:128em;
+  margin-bottom: 6.25em;
+  }
+.button-border {
+				border: 13px solid rgba(225,225,225,0.5);
+				border-radius: 94px;
+				height: 188px;
+		}
+		#about-we .button-container {
+					position:
+					width: 100%;
+					text-align: center;
+					top: 50%;
+					transform: translateY(-50%);
+					display: inline-flex;
+				}
 .footer {
 	background-color: var(--amarilloOro);
 	color: white;
 	text-align: inline-block;
 	border-radius: 10px 10px 0 0;
 	border-color: #d4b404;
-	position: fixed;  	
+	position: fixed;
 	bottom: 0;
 	width: 100%;
 }
