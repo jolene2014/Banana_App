@@ -22,15 +22,15 @@
 
 		</header>
 
-</br>
+<br>
 <div id="description">
 <div class="container"><h1>Banana APPS Company</h1>
 <p>PAGINA EN PROCESO</p>
 </div>
-</br>
-</br>
-</br>
-</br>
+<br>
+<br>
+<br>
+<br>
 <div class="container">
 <h6>Banana APPS Company</h6>
 </div>
